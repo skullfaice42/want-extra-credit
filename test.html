@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test?</title>
+    
+</head>
+<body>
+    <div class="one">
+        <h2>MIKU</h2>
+        <div class="content">
+            <h3>Miku</h3>
+            <p>Miku is the best girl there is to be</p>
+            <p>VOTE Miku for president in 2025</p>
+        </div>
+    </div>
+    
+</body>
+<style>
+    body{
+        background-color: rgba(0, 0, 0, 0.462);
+    }
+    h2{
+        font-size: 4em;
+        background-color: black;
+        color: white;
+        width: 20%;
+        text-align: center;
+        border-radius: 10px;
+        transition: 0.2s;
+    }
+    h2:hover{
+        background-color: white;
+        color: black;
+    }
+    h2:hover:active{
+        transform: translateX(10%);
+    }
+    .one h3:hover::after{
+        transform: translateX(20%)
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-100%); /*this moves the container left*/
+        background-color: rgba(240, 248, 255, 0.594);
+        width: 30%;
+        text-align: center;
+        opacity: 0;
+    }
+    h2:hover + .content{
+        opacity: 1;
+        transform: translateX(10%);
+        transition: transform 0.5s ease, opacity 0.5s ease; /*waht the everlasting hell is this mess*/
+    }
+    .content::after{
+        transform: translateX(10%);
+    }
+    h3{
+        font-size: 3em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    
+</style>
+</html>
