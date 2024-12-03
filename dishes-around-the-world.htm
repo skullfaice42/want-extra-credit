@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thanksgiving Turkey</title>
+    <link rel="icon" href="imgs/image.png">
     <link rel="stylesheet" href="style.css">
     <style>
         body{
@@ -74,14 +75,18 @@
     }
     /* ready for what css can do? im not */
 
-.one:hover + .one-over{
+    .one:hover + .one-over, 
+.one:focus + .one-over, 
+.one:active + .one-over{
     /* margin: 0; */
     transform: translateX(230%);
     /* transform: translate(100%, 100%); */
     /* transform: translateY(-120%); */
     opacity: 1;
 }
+
 .one-over{
+    display:inline-block;
     position: absolute;
     /* visibility: hidden; */
     display: none;
@@ -127,6 +132,24 @@
         font-size: 1.5em;
     }
     .menu-talk p{
+        font-size: 1.4em;
+    }
+    .one{
+        font-size: 1.6em;
+    }
+    h3{
+        font-size: .4em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1{
+        font-size: 3em;
+    }
+    .menu-talk h2{
+        font-size: 1.5em;
+    }
+    .menu-talk p{
         font-size: .9em;
     }
     .one{
@@ -136,9 +159,11 @@
         font-size: .4em;
     }
 }
-
-
-
+@media screen and (max-width: 1024px){
+    .menu-talk p{
+        font-size: .7em;
+    }
+}
 
 
 
@@ -260,7 +285,7 @@
                 Mushrooms tend to be one of the most abundant ingredients in a Northwestern Thanksgiving, whether they come in gravy form or are sautèed as a side. Our favorite as Oregonians? Sauteed with butter and tarragon, of course!
             </p>
         </div>
-        <div class="one">Santa Fe, New Mexico</div>
+        <div class="one">Santa Fe</div>
         <div class="one-over">
             <img src="imgs/page-3/image26.png" alt="Pumpkin-Empanadas-IMG">
             <h2>Pumpkin Empanadas</h2>
